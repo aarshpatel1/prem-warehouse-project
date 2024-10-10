@@ -118,7 +118,8 @@
      /* Smooth transition for hover effect */
  }
 
- .service-card img {
+ .service-card img,
+ .community-section img {
      width: 80px;
      /* Size of the icons */
  }
@@ -135,7 +136,8 @@
  }
 
  /* Hover effect */
- .service-card:hover {
+ .service-card:hover,
+ .community-section:ho {
      transform: translateY(-10px);
      /* Lift the card up on hover */
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -148,10 +150,8 @@
      /* Light background */
  }
 
- .advantages-section h2,
- .counter-section h2 {
+ h2 {
      color: #004080;
-     /* Dark blue heading */
      font-weight: bold;
  }
 
@@ -204,4 +204,100 @@
  footer a {
      text-decoration: none;
      color: white;
+ }
+
+ .no-fouc {
+     display: none;
+ }
+
+ .quotes {
+     width: 60%;
+     margin: 24px auto;
+ }
+
+ /* Simple Slider */
+ .white-back {
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     background: #004080;
+ }
+
+ .simple blockquote p {
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     color: #1e528e;
+     padding: 25px;
+     font-size: 1.25em;
+     font-style: italic;
+     text-align: center;
+ }
+
+ .simple cite {
+     font-size: 1em;
+     float: right;
+     font-style: normal;
+     color: #1e528e;
+ }
+
+ .simple cite a {
+     color: #2d91c2;
+     font-style: italic;
+     text-decoration: none;
+     font-size: 0.85em;
+ }
+
+ .simple cite a:hover {
+     color: #00b4cc;
+ }
+
+ /* A custom cursor to let folks know they can drag things */
+
+ /* Bubble Slider */
+
+ .bubble blockquote {
+     margin: 10px 10px 0;
+     background: #004080;
+     padding: 60px;
+     position: relative;
+     border: none;
+     border-radius: 8px;
+     font-size: 1.25em;
+     color: #fff;
+ }
+
+ .bubble blockquote:before,
+ .bubble blockquote:after {
+     content: "\201C";
+     position: absolute;
+     font-size: 80px;
+     padding: 10px;
+     line-height: 1;
+     color: #fff;
+ }
+
+ .bubble blockquote:before {
+     top: 0;
+     left: 10px;
+     color: #004080;
+ }
+
+ .bubble blockquote:after {
+     content: "\201D";
+     right: 10px;
+     bottom: -0.5em;
+ }
+
+ .bubble div {
+     width: 0;
+     height: 0;
+     border-left: 0 solid transparent;
+     border-right: 20px solid transparent;
+     border-top: 20px solid #373737;
+     margin: 0 0 0 60px;
+     margin-bottom: 10px;
+ }
+
+ .bubble cite {
+     padding-left: 20px;
+     font-size: 1.25em;
+     color: #004080;
  }
