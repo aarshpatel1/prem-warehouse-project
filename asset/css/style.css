@@ -302,14 +302,28 @@
      color: #004080;
  }
 
- .partners-section img{
-    transition: all 0.3s linear;
-    border-radius: 8px;
+ .partners-section img {
+     transition: all 0.3s linear;
+     border-radius: 8px;
  }
 
  .partners-section img:hover {
      transform: translateY(-10px);
      /* Slight lift on hover */
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+     /* Subtle shadow */
+ }
+
+ .warehouses a {
+     color: #004080;
+ }
+
+ .warehouses .web-scroll {
+     transition: all 0.3s linear;
+ }
+
+ .web-scroll:hover {
+     transform: translateY(-10px);
+     /* Slight lift on hover */
      /* Subtle shadow */
  }
