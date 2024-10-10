@@ -106,36 +106,93 @@
         }
 
         /* Service Section Styling */
+        /* Service Section Styling */
         .services-section {
             background-color: #f8f9fa;
-            /* Light background to contrast with blue theme */
+            /* Light background */
         }
 
         .services-section h2 {
             color: #004080;
-            /* Matching the dark blue theme */
+            /* Dark blue heading color */
             font-weight: bold;
         }
 
-        .services-section h4 {
+        /* Card Styling */
+        .service-card {
+            border: none;
+            /* Remove card border */
+            border-radius: 10px;
+            /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Smooth transition for hover effect */
+        }
+
+        .service-card img {
+            width: 80px;
+            /* Size of the icons */
+        }
+
+        .service-card h4 {
             color: #007bff;
-            /* Blue color for service names */
+            /* Blue color for service titles */
             font-weight: bold;
         }
 
-        .services-section p {
+        .service-card p {
             color: #333;
             font-size: 1rem;
         }
 
-        .services-section img {
-            width: 80px;
-            /* Resizing the vector images */
-            margin-bottom: 10px;
+        /* Hover effect */
+        .service-card:hover {
+            transform: translateY(-10px);
+            /* Lift the card up on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Apply shadow on hover */
         }
 
-        .services-section .col-md-3 {
-            margin-bottom: 2rem;
+        /* Advantages Section Styling */
+        .advantages-section {
+            background-color: #eef1f7;
+            /* Light background */
+        }
+
+        .advantages-section h2 {
+            color: #004080;
+            /* Dark blue heading */
+            font-weight: bold;
+        }
+
+        /* Card Styling */
+        .advantage-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .advantage-card img {
+            width: 80px;
+            /* Size of the icons */
+        }
+
+        .advantage-card h4 {
+            color: #007bff;
+            /* Blue color for advantage titles */
+            font-weight: bold;
+        }
+
+        .advantage-card p {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        /* Hover effect for the cards */
+        .advantage-card:hover {
+            transform: translateY(-10px);
+            /* Slight lift on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
         }
     </style>
 </head>
@@ -211,37 +268,141 @@
 
 
     <!-- Service Section -->
+    <!-- Service Section with Cards -->
     <section class="services-section py-5">
         <div class="container">
             <h2 class="text-center mb-5">Our Services</h2> <!-- Section Heading -->
             <div class="row">
-                <!-- Inventory Management -->
-                <div class="col-md-3 text-center">
-                    <img src="https://img.icons8.com/ios-filled/100/007bff/warehouse-1.png" alt="Inventory Management">
-                    <h4 class="mt-3">Inventory Management</h4>
-                    <p>Efficiently track and manage your stock levels in real-time with our advanced solutions.</p>
+                <!-- Inventory Management Card -->
+                <div class="col-md-3">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/warehouse-1.png"
+                                alt="Inventory Management">
+                            <h4 class="mt-3">Inventory Management</h4>
+                            <p>Efficiently track and manage your stock levels in real-time with our advanced solutions.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Order Processing -->
-                <div class="col-md-3 text-center">
-                    <img src="https://img.icons8.com/ios-filled/100/007bff/checkout.png" alt="Order Processing">
-                    <h4 class="mt-3">Order Processing</h4>
-                    <p>Streamline order fulfillment and ensure accurate, timely deliveries to your customers.</p>
+                <!-- Order Processing Card -->
+                <div class="col-md-3">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/checkout.png" alt="Order Processing">
+                            <h4 class="mt-3">Order Processing</h4>
+                            <p>Streamline order fulfillment and ensure accurate, timely deliveries to your customers.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Warehouse Optimization -->
-                <div class="col-md-3 text-center">
-                    <img src="https://img.icons8.com/ios-filled/100/007bff/fork-lift.png" alt="Warehouse Optimization">
-                    <h4 class="mt-3">Warehouse Optimization</h4>
-                    <p>Optimize warehouse layouts and storage for maximum efficiency and productivity.</p>
+                <!-- Warehouse Optimization Card -->
+                <div class="col-md-3">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/fork-lift.png"
+                                alt="Warehouse Optimization">
+                            <h4 class="mt-3">Warehouse Optimization</h4>
+                            <p>Optimize warehouse layouts and storage for maximum efficiency and productivity.</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Shipment Tracking -->
-                <div class="col-md-3 text-center">
-                    <img src="https://img.icons8.com/ios-filled/100/007bff/delivery.png" alt="Shipment Tracking">
-                    <h4 class="mt-3">Shipment Tracking</h4>
-                    <p>Track shipments in real-time to provide transparent delivery updates to customers.</p>
+                <!-- Shipment Tracking Card -->
+                <div class="col-md-3">
+                    <div class="card service-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/delivery.png"
+                                alt="Shipment Tracking">
+                            <h4 class="mt-3">Shipment Tracking</h4>
+                            <p>Track shipments in real-time to provide transparent delivery updates to customers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Advantages Section -->
+    <section class="advantages-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Advantages for Dealers</h2> <!-- Section Heading -->
+            <div class="row">
+                <!-- Advantage 1: Cost-Effective Storage -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/money.png"
+                                alt="Cost-Effective Storage">
+                            <h4 class="mt-3">Cost-Effective Storage</h4>
+                            <p>Save costs with our competitive and flexible pricing for long and short-term storage.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 2: Enhanced Security -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/security-shield-green.png"
+                                alt="Enhanced Security">
+                            <h4 class="mt-3">Enhanced Security</h4>
+                            <p>Our warehouses are equipped with 24/7 surveillance and modern security systems to ensure
+                                the safety of your goods.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 3: Real-Time Tracking -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/time-machine.png"
+                                alt="Real-Time Tracking">
+                            <h4 class="mt-3">Real-Time Tracking</h4>
+                            <p>Track your inventory in real-time through our advanced management system for full
+                                transparency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Advantage 4: Quick Access -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/time.png" alt="Quick Access">
+                            <h4 class="mt-3">Quick Access to Goods</h4>
+                            <p>Ensure fast access to your stored goods with our optimized warehouse layout and
+                                processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 5: Scalable Storage -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/expand.png" alt="Scalable Storage">
+                            <h4 class="mt-3">Scalable Storage</h4>
+                            <p>Easily scale your storage needs as your business grows, with flexible space solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advantage 6: Professional Support -->
+                <div class="col-md-4">
+                    <div class="card advantage-card text-center">
+                        <div class="card-body">
+                            <img src="https://img.icons8.com/ios-filled/100/007bff/support.png"
+                                alt="Professional Support">
+                            <h4 class="mt-3">Professional Support</h4>
+                            <p>Get round-the-clock assistance from our experienced warehouse management team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
