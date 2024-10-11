@@ -308,3 +308,55 @@
  .contact-details a {
      color: #004080;
  }
+
+
+ /* Media query for tablets (768px - 1024px) */
+ @media (min-width: 768px) and (max-width: 1024px) {
+     .hero {
+         padding: 100px 20px;
+         text-align: center;
+     }
+
+     .hero h1 {
+         font-size: 2.5rem;
+         /* Adjust font size */
+     }
+
+     .hero p {
+         font-size: 1rem;
+         /* Adjust font size */
+     }
+
+     .hero-content {
+         padding: 0 15px;
+     }
+
+     /* Counter section: Align counters properly for tablets */
+     .counter-section .counter {
+         font-size: 3rem;
+     }
+
+     .counter-section .counter-text {
+         font-size: 1rem;
+     }
+
+     /* Adjust card layout for better spacing on tablet screens */
+     .services-section .service-card,
+     .advantages-section .advantage-card {
+         margin-bottom: 20px;
+         /* Add space between cards */
+     }
+
+     /* Footer adjustments for better readability on tablet */
+     footer h5 {
+         font-size: 1.25rem;
+     }
+
+     footer a {
+         font-size: 1rem;
+     }
+
+     footer p {
+         font-size: 0.9rem;
+     }
+ }
