@@ -1,346 +1,276 @@
- /* Custom CSS for Hero Section */
- .hero {
-     background: url('../images/hero-background.jpg') no-repeat center center/cover;
-     min-height: 100vh;
-     color: #fff;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     text-align: center;
- }
+/* Hero Section Styling */
+.hero {
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
 
- .hero-overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.8);
-     /* Dark overlay */
- }
+/* Dark overlay for the hero section */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
 
- .hero-content {
-     position: relative;
-     z-index: 2;
- }
+/* Content inside the hero section */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
 
+/* Paragraph styling inside the hero section */
+.hero p {
+    margin-top: 1rem;
+    max-width: 90%;
+    margin: auto;
+}
 
- .hero p {
-     margin-top: 1rem;
-     max-width: 90%;
-     margin: auto;
- }
+/* Button Styling */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    border: none;
+}
 
- /* Blue theme styles */
- .btn-custom {
-     background-color: #007bff;
-     color: #fff;
-     font-size: 1.1rem;
-     padding: 0.75rem 1.5rem;
-     border-radius: 30px;
-     margin-top: 1rem;
-     border: none;
- }
+/* Button hover effect */
+.btn-custom:hover {
+    background-color: #0056b3;
+}
 
- .btn-custom:hover {
-     background-color: #0056b3;
- }
+/* Header Styling */
+.navbar {
+    background-color: #004080;
+}
 
- /* Header Blue Theme */
- .navbar {
-     background-color: #004080;
-     /* Dark blue */
- }
+/* Brand text in the header */
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
- .navbar-brand {
-     color: #fff !important;
-     font-size: 1.5rem;
-     font-weight: bold;
- }
+/* Navigation link styling */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    margin-right: 1rem;
+}
 
- .navbar-nav .nav-link {
-     color: #fff !important;
-     margin-right: 1rem;
- }
+/* Navigation link hover effect */
+.navbar-nav .nav-link:hover {
+    color: #d9d9d9 !important;
+}
 
- .navbar-nav .nav-link:hover {
-     color: #d9d9d9 !important;
- }
+/* Counter Section Styling */
+.counter-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
 
- .navbar-toggler {
-     border-color: #fff;
- }
+/* Counter number styling */
+.counter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #007bff;
+}
 
- /* Counter Section Styles */
- .counter-section {
-     padding: 3rem 0;
-     background-color: #f8f9fa;
-     text-align: center;
- }
+/* Text below the counter */
+.counter-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+}
 
- .counter {
-     font-size: 3rem;
-     font-weight: 700;
-     color: #007bff;
- }
+/* Services Section Styling */
+.services-section {
+    background-color: #f8f9fa;
+}
 
- .counter-text {
-     font-size: 1.25rem;
-     font-weight: 500;
-     color: #333;
- }
+/* Services heading styling */
+.services-section h2 {
+    color: #004080;
+    font-weight: bold;
+}
 
- /* Service Section Styling */
- /* Service Section Styling */
- .services-section {
-     background-color: #f8f9fa;
-     /* Light background */
- }
+/* Service card styling */
+.service-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
- .services-section h2 {
-     color: #004080;
-     /* Dark blue heading color */
-     font-weight: bold;
- }
+/* Icons inside service cards */
+.service-card img {
+    width: 80px;
+}
 
- /* Card Styling */
- .service-card {
-     border: none;
-     /* Remove card border */
-     border-radius: 10px;
-     /* Rounded corners */
-     transition: transform 0.3s, box-shadow 0.3s;
-     /* Smooth transition for hover effect */
- }
+/* Service card title */
+.service-card h4 {
+    color: #007bff;
+    font-weight: bold;
+}
 
- .service-card img,
- .community-section img,
- .advantage-card img {
-     width: 80px;
-     /* Size of the icons */
- }
+/* Service card text */
+.service-card p {
+    color: #333;
+    font-size: 1rem;
+}
 
- .service-card h4 {
-     color: #007bff;
-     /* Blue color for service titles */
-     font-weight: bold;
- }
+/* Service card hover effect */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
- .service-card p {
-     color: #333;
-     font-size: 1rem;
- }
+/* Advantages Section Styling */
+.advantages-section {
+    background-color: #eef1f7;
+}
 
- /* Hover effect */
- .service-card:hover,
- .community-section:ho {
-     transform: translateY(-10px);
-     /* Lift the card up on hover */
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-     /* Apply shadow on hover */
- }
+/* Advantage card styling */
+.advantage-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+}
 
- /* Advantages Section Styling */
- .advantages-section {
-     background-color: #eef1f7;
-     /* Light background */
- }
+/* Advantage card title */
+.advantage-card h4 {
+    color: #007bff;
+    font-weight: bold;
+}
 
- h2 {
-     color: #004080;
-     font-weight: bold;
- }
+/* Advantage card text */
+.advantage-card p {
+    color: #333;
+    font-size: 1rem;
+}
 
- /* Card Styling */
- .advantage-card {
-     border: none;
-     border-radius: 10px;
-     transition: transform 0.3s, box-shadow 0.3s;
-     display: flex;
-     flex-direction: column;
-     /* Align items vertically */
-     justify-content: space-between;
-     /* Space out items */
-     width: 100%;
-     /* Set to full width */
-     height: 250px;
-     /* Set fixed height for square shape */
- }
+/* Advantage card hover effect */
+.advantage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
+/* Footer Styling */
+footer {
+    background-color: #004080;
+    color: white;
+}
 
- .advantage-card h4 {
-     color: #007bff;
-     /* Blue color for advantage titles */
-     font-weight: bold;
- }
+/* Footer links */
+footer a {
+    text-decoration: none;
+    color: white;
+}
 
- .advantage-card p {
-     color: #333;
-     font-size: 1rem;
- }
+/* Slider quote styling */
+.simple blockquote p {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #1e528e;
+    padding: 25px;
+    font-size: 1.25em;
+    font-style: italic;
+    text-align: center;
+}
 
- /* Hover effect for the cards */
- .advantage-card:hover {
-     transform: translateY(-10px);
-     /* Slight lift on hover */
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-     /* Subtle shadow */
- }
+/* Slider cite styling */
+.simple cite {
+    font-size: 1em;
+    float: right;
+    font-style: normal;
+    color: #1e528e;
+}
 
- /* Footer Styling */
- footer {
-     background-color: #004080;
-     color: white;
- }
+/* Slider cite link styling */
+.simple cite a {
+    color: #2d91c2;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 0.85em;
+}
 
- footer a {
-     text-decoration: none;
-     color: white;
- }
+.simple cite a:hover {
+    color: #00b4cc;
+}
 
- .no-fouc {
-     display: none;
- }
+/* Bubble Slider Styling */
+.bubble blockquote {
+    margin: 10px 10px 0;
+    background: #004080;
+    padding: 60px;
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25em;
+    color: #fff;
+}
 
- .quotes {
-     /* width: 60%; */
-     margin: 24px auto;
- }
+/* Bubble citation text */
+.bubble cite {
+    padding-left: 20px;
+    font-size: 1.25em;
+    color: #004080;
+}
 
- /* Simple Slider */
- .white-back {
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-     background: #004080;
- }
+/* Partners section image hover effect */
+.partners-section img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
- .simple blockquote p {
-     border-top: 1px solid #ccc;
-     border-bottom: 1px solid #ccc;
-     color: #1e528e;
-     padding: 25px;
-     font-size: 1.25em;
-     font-style: italic;
-     text-align: center;
- }
+/* Warehouse section link color */
+.warehouses a {
+    color: #004080;
+}
 
- .simple cite {
-     font-size: 1em;
-     float: right;
-     font-style: normal;
-     color: #1e528e;
- }
+/* Warehouse web scroll hover effect */
+.web-scroll:hover {
+    transform: translateY(-10px);
+}
 
- .simple cite a {
-     color: #2d91c2;
-     font-style: italic;
-     text-decoration: none;
-     font-size: 0.85em;
- }
+/* Icon color and hover effect */
+iconify-icon {
+    color: #004080;
+    transition: all 0.3s linear;
+}
 
- .simple cite a:hover {
-     color: #00b4cc;
- }
+/* Contact details list styling */
+.contact-details li {
+    transition: all 0.3s linear;
+    border: 1px solid #004080;
+    border-radius: 50%;
+}
 
- /* A custom cursor to let folks know they can drag things */
+/* Contact details hover effect */
+.contact-details li:hover {
+    background-color: #004080;
+}
 
- /* Bubble Slider */
+/* Contact details icon hover effect */
+.contact-details li:hover iconify-icon {
+    color: white;
+}
 
- .bubble blockquote {
-     margin: 10px 10px 0;
-     background: #004080;
-     padding: 60px;
-     position: relative;
-     border: none;
-     border-radius: 8px;
-     font-size: 1.25em;
-     color: #fff;
- }
-
- .bubble blockquote:before,
- .bubble blockquote:after {
-     content: "\201C";
-     position: absolute;
-     font-size: 80px;
-     padding: 10px;
-     line-height: 1;
-     color: #fff;
- }
-
- .bubble blockquote:before {
-     top: 0;
-     left: 10px;
-     color: #004080;
- }
-
- .bubble blockquote:after {
-     content: "\201D";
-     right: 10px;
-     bottom: -0.5em;
- }
-
- .bubble div {
-     width: 0;
-     height: 0;
-     border-left: 0 solid transparent;
-     border-right: 20px solid transparent;
-     border-top: 20px solid #373737;
-     margin: 0 0 0 60px;
-     margin-bottom: 10px;
- }
-
- .bubble cite {
-     padding-left: 20px;
-     font-size: 1.25em;
-     color: #004080;
- }
-
- .partners-section img {
-     transition: all 0.3s linear;
-     border-radius: 8px;
- }
-
- .partners-section img:hover {
-     transform: translateY(-10px);
-     /* Slight lift on hover */
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-     /* Subtle shadow */
- }
-
- .warehouses a {
-     color: #004080;
- }
-
- .warehouses .web-scroll {
-     transition: all 0.3s linear;
- }
-
- .web-scroll:hover {
-     transform: translateY(-10px);
-     /* Slight lift on hover */
-     /* Subtle shadow */
- }
-
- iconify-icon {
-     color: #004080;
-     transition: all 0.3s linear;
- }
-
-
- .contact-details li {
-     transition: all 0.3s linear;
-     border: 1px solid #004080;
-     border-radius: 50%;
- }
-
- .contact-details li:hover {
-     background-color: #004080;
- }
-
- .contact-details li:hover iconify-icon {
-     color: white;
- }
-
- .contact-details a {
-     color: #004080;
- }
+/* Contact details link color */
+.contact-details a {
+    color: #004080;
+}
