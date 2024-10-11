@@ -119,7 +119,8 @@
  }
 
  .service-card img,
- .community-section img {
+ .community-section img,
+ .advantage-card img {
      width: 80px;
      /* Size of the icons */
  }
@@ -171,10 +172,6 @@
      /* Set fixed height for square shape */
  }
 
- .advantage-card img {
-     width: 80px;
-     /* Size of the icons */
- }
 
  .advantage-card h4 {
      color: #007bff;
@@ -211,7 +208,7 @@
  }
 
  .quotes {
-     width: 60%;
+     /* width: 60%; */
      margin: 24px auto;
  }
 
