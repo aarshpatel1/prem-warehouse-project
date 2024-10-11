@@ -25,15 +25,11 @@
      z-index: 2;
  }
 
- .hero h1 {
-     font-size: 4rem;
-     font-weight: 700;
- }
 
  .hero p {
-     font-size: 1.25rem;
      margin-top: 1rem;
-     max-width: 600px;
+     max-width: 90%;
+     margin: auto;
  }
 
  /* Blue theme styles */
@@ -43,7 +39,7 @@
      font-size: 1.1rem;
      padding: 0.75rem 1.5rem;
      border-radius: 30px;
-     margin-top: 1.5rem;
+     margin-top: 1rem;
      border: none;
  }
 
@@ -323,4 +319,28 @@
      transform: translateY(-10px);
      /* Slight lift on hover */
      /* Subtle shadow */
+ }
+
+ iconify-icon {
+     color: #004080;
+     transition: all 0.3s linear;
+ }
+
+
+ .contact-details li {
+     transition: all 0.3s linear;
+     border: 1px solid #004080;
+     border-radius: 50%;
+ }
+
+ .contact-details li:hover {
+     background-color: #004080;
+ }
+
+ .contact-details li:hover iconify-icon {
+     color: white;
+ }
+
+ .contact-details a {
+     color: #004080;
  }
