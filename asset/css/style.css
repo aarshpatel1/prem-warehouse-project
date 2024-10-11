@@ -17,7 +17,6 @@
      width: 100%;
      height: 100%;
      background: rgba(0, 0, 0, 0.8);
-     /* Dark overlay */
  }
 
  .hero-content {
@@ -25,14 +24,12 @@
      z-index: 2;
  }
 
-
  .hero p {
      margin-top: 1rem;
      max-width: 90%;
      margin: auto;
  }
 
- /* Blue theme styles */
  .btn-custom {
      background-color: #007bff;
      color: #fff;
@@ -47,10 +44,8 @@
      background-color: #0056b3;
  }
 
- /* Header Blue Theme */
  .navbar {
      background-color: #004080;
-     /* Dark blue */
  }
 
  .navbar-brand {
@@ -92,38 +87,30 @@
  }
 
  /* Service Section Styling */
- /* Service Section Styling */
  .services-section {
      background-color: #f8f9fa;
-     /* Light background */
  }
 
  .services-section h2 {
      color: #004080;
-     /* Dark blue heading color */
      font-weight: bold;
  }
 
  /* Card Styling */
  .service-card {
      border: none;
-     /* Remove card border */
      border-radius: 10px;
-     /* Rounded corners */
      transition: transform 0.3s, box-shadow 0.3s;
-     /* Smooth transition for hover effect */
  }
 
  .service-card img,
  .community-section img,
  .advantage-card img {
      width: 80px;
-     /* Size of the icons */
  }
 
  .service-card h4 {
      color: #007bff;
-     /* Blue color for service titles */
      font-weight: bold;
  }
 
@@ -132,19 +119,14 @@
      font-size: 1rem;
  }
 
- /* Hover effect */
  .service-card:hover,
  .community-section:ho {
      transform: translateY(-10px);
-     /* Lift the card up on hover */
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-     /* Apply shadow on hover */
  }
 
- /* Advantages Section Styling */
  .advantages-section {
      background-color: #eef1f7;
-     /* Light background */
  }
 
  h2 {
@@ -152,26 +134,20 @@
      font-weight: bold;
  }
 
- /* Card Styling */
  .advantage-card {
      border: none;
      border-radius: 10px;
      transition: transform 0.3s, box-shadow 0.3s;
      display: flex;
      flex-direction: column;
-     /* Align items vertically */
      justify-content: space-between;
-     /* Space out items */
      width: 100%;
-     /* Set to full width */
      height: 250px;
-     /* Set fixed height for square shape */
  }
 
 
  .advantage-card h4 {
      color: #007bff;
-     /* Blue color for advantage titles */
      font-weight: bold;
  }
 
@@ -180,15 +156,11 @@
      font-size: 1rem;
  }
 
- /* Hover effect for the cards */
  .advantage-card:hover {
      transform: translateY(-10px);
-     /* Slight lift on hover */
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-     /* Subtle shadow */
  }
 
- /* Footer Styling */
  footer {
      background-color: #004080;
      color: white;
@@ -204,11 +176,9 @@
  }
 
  .quotes {
-     /* width: 60%; */
      margin: 24px auto;
  }
 
- /* Simple Slider */
  .white-back {
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
      background: #004080;
@@ -242,10 +212,8 @@
      color: #00b4cc;
  }
 
- /* A custom cursor to let folks know they can drag things */
 
  /* Bubble Slider */
-
  .bubble blockquote {
      margin: 10px 10px 0;
      background: #004080;
@@ -302,9 +270,7 @@
 
  .partners-section img:hover {
      transform: translateY(-10px);
-     /* Slight lift on hover */
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-     /* Subtle shadow */
  }
 
  .warehouses a {
@@ -317,8 +283,6 @@
 
  .web-scroll:hover {
      transform: translateY(-10px);
-     /* Slight lift on hover */
-     /* Subtle shadow */
  }
 
  iconify-icon {
